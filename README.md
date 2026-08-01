@@ -11,7 +11,7 @@ A modern REST API built with **FastAPI** for managing personal expenses. The app
 
 # 📸 Dashboard
 
-![Dashboard](Images/ dashboard_1.png)
+![Dashboard](Images/dashboard_1.png)
 
 ---
 
