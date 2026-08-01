@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar">
+
+    <div class="logo">
+        💰 Smart Expense Tracker
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        <a href="/docs">Swagger</a>
+
+        <a href="/redoc">ReDoc</a>
+
+    </div>
+
+</nav>
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>💰 Smart Expense Tracker</h1>
+
+        <p>Personal Expense Management REST API</p>
+        <div class="hero-banner">
+
+        <h2>Track Expenses. Analyze Spending. Stay in Control.</h2>
+
+        <p>
+
+            A lightweight REST API built with FastAPI to manage personal expenses efficiently.
+
+        </p>
+
+    </div>
+
+    </header>
+
+
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2>{{ dashboard.expense_count }}</h2>
+
+            <p>Total Expenses</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>₹ {{ dashboard.total_amount }}</h2>
+
+            <p>Total Amount</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>{{ dashboard.category_count }}</h2>
+
+            <p>Categories</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>{{ today }}</h2>
+
+            <p>Today's Date</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- API Information -->
+
+    <section class="status-card">
+
+        <h2>🟢 API Information</h2>
+
+        <div class="status-grid">
+
+            <div>
+
+                <strong>Status</strong>
+
+                <p>Running</p>
+
+            </div>
+
+            <div>
+
+                <strong>Version</strong>
+
+                <p>2.0</p>
+
+            </div>
+
+            <div>
+
+                <strong>Storage</strong>
+
+                <p>JSON File</p>
+
+            </div>
+
+            <div>
+
+                <strong>Framework</strong>
+
+                <p>FastAPI</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Quick Actions -->
+
+    <section class="card">
+
+        <h2>⚡ Quick Actions</h2>
+
+        <div class="buttons">
+
+            <a href="/docs" target="_blank">
+
+                Swagger Docs
+
+            </a>
+
+            <a href="/redoc" target="_blank">
+
+                ReDoc
+
+            </a>
+
+            <a href="https://github.com/Nithinm23/smart-expense-tracker" target="_blank">
+
+                GitHub
+
+            </a>
+
+            <a href="/docs#/default/create_expense_expenses_post" target="_blank">
+
+                Add Expense
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Recent Expenses -->
+
+    <section class="card">
+
+        <h2>🧾 Recent Expenses</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Title</th>
+
+                    <th>Amount</th>
+
+                    <th>Category</th>
+
+                    <th>Date</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for expense in recent_expenses %}
+
+                <tr>
+
+                    <td>{{ expense.title }}</td>
+
+                    <td>₹ {{ expense.amount }}</td>
+
+                    <td>{{ expense.category }}</td>
+
+                    <td>{{ expense.date }}</td>
+
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- Expense Distribution -->
+
+    <section class="card">
+
+        <h2>📊 Expense Distribution</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Category</th>
+
+                    <th>Total Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for category, amount in category_distribution.items() %}
+
+                <tr>
+
+                    <td>{{ category }}</td>
+
+                    <td>₹ {{ amount }}</td>
+
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+    <footer>
+
+    <p>
+
+        Smart Expense Tracker API
+
+    </p>
+
+    <p>
+
+        Version 2.0 • FastAPI • JSON Storage
+
+    </p>
+
+    <p>
+
+        Developed by Nithin M
+
+    </p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
