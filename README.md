@@ -13,7 +13,7 @@ A modern REST API built with **FastAPI** for managing personal expenses. The app
 
 > Replace the image paths below with your screenshots after uploading them to the **images/** folder.
 
-![Dashboard](<img width="948" height="433" src="https://github.com/user-attachments/assets/d8b3fcee-7bfa-4cfa-aa7c-ac481ca3fdd6" />)
+![Dashboard](Images/dashboard_1.png)
 
 ---
 
@@ -268,19 +268,22 @@ Expected Output
 
 ## Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard_1](Images/dashboard_1.png)
+![Dashboard_2](Images/dashboard_2.png)
+![Dashboard_3](Images/dashboard_3.png)
+![Dashboard_4](Images/dashboard_4.png)
 
 ---
 
 ## Swagger Documentation
 
-![Swagger](images/swagger.png)
+![Swagger Documentation](Images/swagger.png)
 
 ---
 
 ## Test Results
 
-![Tests](images/tests.png)
+![Test Results](Images/tests.png)
 
 ---
 
