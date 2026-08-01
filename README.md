@@ -11,8 +11,6 @@ A modern REST API built with **FastAPI** for managing personal expenses. The app
 
 # 📸 Dashboard
 
-> Replace the image paths below with your screenshots after uploading them to the **images/** folder.
-
 ![Dashboard](Images/dashboard_1.png)
 
 ---
