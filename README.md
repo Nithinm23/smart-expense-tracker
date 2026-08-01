@@ -14,7 +14,7 @@ A modern REST API built with **FastAPI** for managing personal expenses. The app
 
 > Replace the image paths below with your screenshots after uploading them to the **images/** folder.
 
-![Dashboard](<img width="948" height="433" alt="Screenshot 2026-08-01 135231" src="https://github.com/user-attachments/assets/d8b3fcee-7bfa-4cfa-aa7c-ac481ca3fdd6" />)
+![Dashboard](<img width="948" height="433" src="https://github.com/user-attachments/assets/d8b3fcee-7bfa-4cfa-aa7c-ac481ca3fdd6" />)
 
 ---
 
