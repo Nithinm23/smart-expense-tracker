@@ -1,7 +1,6 @@
 # 💰 Smart Expense Tracker API
 
-![Python](https://img.shields.io/badge<img width="948" height="433" alt="Screenshot 2026-08-01 135231" src="https://github.com/user-attachments/assets/edd3641a-ee5d-495e-9dc4-bb654ca9d736" />
-/Python-3.14-blue)
+![Python](https://img.shields.io/badge/Python-3.14-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-green)
 ![Pytest](https://img.shields.io/badge/Tests-8_Passed-success)
 ![License](https://img.shields.io/badge/License-MIT-orange)
